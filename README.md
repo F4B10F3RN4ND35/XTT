@@ -1,2 +1,16 @@
-# DFIR
-The intent of this page is to share DFIR tools customized by me, for my daily activities and trainings. I m using very known tools found on Internet (most on Github and other repositories), their creators are the real experts and deserve all the credits for the hard work.  
+# XTA - Extended Attribute Auditor
+
+A DFIR tool for Linux and macOS to identify, extract, and decode Extended Attributes (EAs).
+
+## Features
+* **Cross-Platform:** Supports Linux and macOS.
+* **Content Extraction:** Decodes macOS Binary Plists (WhereFroms, Quarantine).
+* **Forensic Metrics:** Provides counts of scanned files vs. files with attributes.
+* **CSV Export:** Use `-w` to generate reports for timeline analysis.
+
+## Installation
+```bash
+pip install xattr
+
+## Usage
+python3 xta.py /path/to/scan -w report.csv

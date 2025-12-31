@@ -9,7 +9,6 @@ A DFIR tool for Linux and macOS to identify, extract, and decode Extended Attrib
 * **CSV Export:** Use `-w` to generate reports for timeline analysis.
 
 ## Installation
-```bash
 pip install xattr
 
 ## Usage

@@ -1,0 +1,3 @@
+## Requirements
+- Python 3.x
+- `xattr` library (`pip install xattr`)

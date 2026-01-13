@@ -16,4 +16,4 @@ A forensic utility for the identification, extraction, and decoding of Extended 
 `python3 xtt.py -f ./malicious_file.bin`
 
 ### Generate a forensic report
-`python3 xtt.py -d / -w full_system_ea_report.csv`
+`python3 xtt.py -d / -w report.csv`

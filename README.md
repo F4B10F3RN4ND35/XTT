@@ -1,23 +1,23 @@
-# XTA - Extended Attribute Auditor
+# XTT - Extended Attribute Triage
 
-A forensic utility to extract and decode Extended Attributes on Linux and macOS.
+A forensic utility for the identification, extraction, and decoding of Extended Attributes (EAs) on Linux and macOS.
 
 ## Features
 - **Mutually Exclusive Targets:** Choose between single file (`-f`) or recursive directory (`-d`) scans.
 - **No Truncation:** Displays the full content of all attributes.
-- **macOS Plist Support:** Automatically decodes binary property lists.
+- **macOS Plist Support:** Built-in support for macOS Binary Plists (e.g., `WhereFroms`, `Quarantine`).
 - **CSV Reporting:** Export findings using the `-w` flag.
 
 ## Usage
 ### Scan a folder recursively
-`python3 xta.py -d ./Downloads`
+`python3 xtt.py -d ./Downloads`
 
 ### Analyze a single suspect binary
-`python3 xta.py -f ./malicious_file.bin`
+`python3 xtt.py -f ./malicious_file.bin`
 
 ### Generate a forensic report
-`python3 xta.py -d / -w full_system_ea_report.csv`
+`python3 xtt.py -d / -w full_system_ea_report.csv`
 
 ## Requirements
-- Python 3.x
+- Python 3.8+
 - `xattr` library (`pip install xattr`)

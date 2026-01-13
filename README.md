@@ -17,7 +17,3 @@ A forensic utility for the identification, extraction, and decoding of Extended 
 
 ### Generate a forensic report
 `python3 xtt.py -d / -w full_system_ea_report.csv`
-
-## Requirements
-- Python 3.8+
-- `xattr` library (`pip install xattr`)

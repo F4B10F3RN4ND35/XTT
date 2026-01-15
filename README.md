@@ -12,11 +12,14 @@ A forensic utility for the identification, extraction, and decoding of Extended 
 ### See available options
 `python3 xtt.py -h`
 
+
 ### Scan a folder recursively
 `python3 xtt.py -d ./Downloads`
 
+
 ### Analyze a single suspect binary
 `python3 xtt.py -f ./malicious_file.bin`
+
 
 ### Generate a forensic report
 `python3 xtt.py -d / -w report.csv`

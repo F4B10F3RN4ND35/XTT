@@ -12,9 +12,10 @@ A forensic utility for the identification, extraction, and decoding of Extended 
 ### See available options
 `python3 xtt.py -h`
 
+<img width="750" height="204" alt="image" src="https://github.com/user-attachments/assets/2e103449-eaec-42d1-af7c-3db7c4630d0d" />
 
 ### Scan a folder recursively
-`python3 xtt.py -d teste_dir/`
+`python3 xtt.py -d test_dir/`
 
 <img width="1202" height="354" alt="image" src="https://github.com/user-attachments/assets/77fff018-b68c-4ce4-9daa-b2e33c880c65" />
 

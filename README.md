@@ -24,7 +24,7 @@ A forensic utility for the identification, extraction, and decoding of Extended 
 
 <img width="1201" height="270" alt="image" src="https://github.com/user-attachments/assets/289aaee2-f847-4864-bda7-6d6c901058cc" />
 
-### Generate report
+### Generate a report
 `python3 xtt.py -d test_dir/ -w report.csv`
 
 <img width="1189" height="398" alt="image" src="https://github.com/user-attachments/assets/903c86e6-5b76-4d33-86b3-ca3a6173640a" />

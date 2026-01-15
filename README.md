@@ -9,6 +9,9 @@ A forensic utility for the identification, extraction, and decoding of Extended 
 - **CSV Reporting:** Export findings using the `-w` flag.
 
 ## Usage
+### See available options
+`python3 xtt.py -h`
+
 ### Scan a folder recursively
 `python3 xtt.py -d ./Downloads`
 

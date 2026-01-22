@@ -1,4 +1,4 @@
-# XTT - Extended Attribute Triage
+# XTT - Extended Attributes Triage
 
 A forensic utility for the identification, extraction, and decoding of Extended Attributes (EAs) on Linux and macOS.
 

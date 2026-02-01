@@ -6,14 +6,16 @@ A forensic utility for the identification, extraction, and decoding of Extended 
 - **Mutually Exclusive Targets:** Choose between single file (`-f`) or recursive directory (`-d`) scans.
 - **No Truncation:** Displays the full content of all attributes.
 - **macOS Plist Support:** Built-in support for macOS Binary Plists (e.g., `WhereFroms`, `Quarantine`).
-- **CSV Reporting:** Export findings using the `-w` flag.
-- **Entropy Analysis (NEW):** Automatically calculates entropy for every attribute to detect encrypted or packed payloads.
+- **CSV Reporting:** Export findings to CSV format.
+- **Entropy Analysis (NEW):** Calculates entropy for every attribute to detect encrypted or packed payloads. Attributes with entropy higher than **7.0** (indicating encryption or packing) are automatically highlighted in **RED**.
+- **Time Discrepancy Analysis (NEW)** Compares the file's Modification Time (`mtime`) against current system boundaries. Files modified within a **72-hour window** are highlighted in **YELLOW**.
 
 ## Usage
 ### See available options
 `python3 xtt.py -h`
 
-<img width="750" height="204" alt="image" src="https://github.com/user-attachments/assets/2e103449-eaec-42d1-af7c-3db7c4630d0d" />
+<img width="788" height="205" alt="Screenshot 2026-02-01 at 16 07 47" src="https://github.com/user-attachments/assets/42bd03d9-5490-456b-b79c-975861088148" />
+
 
 ### Scan a folder recursively
 `python3 xtt.py -d test_dir/`
@@ -30,9 +32,13 @@ A forensic utility for the identification, extraction, and decoding of Extended 
 
 <img width="1189" height="398" alt="image" src="https://github.com/user-attachments/assets/903c86e6-5b76-4d33-86b3-ca3a6173640a" />
 
-### Automatic Entropy analysis (NEW)
+### Entropy analysis (NEW)
+`python3 xtt.py -e -d test_dir/`
+<img width="971" height="338" alt="mac_entropy" src="https://github.com/user-attachments/assets/10ecdcd5-5a27-4193-ac17-1ce31b76d0c0" />
 
-<img width="1206" height="400" alt="linux_entropy" src="https://github.com/user-attachments/assets/2edbd587-372d-49b1-a323-ffe165438b7d" />
+### Time modification analysis (NEW)
+`python3 xtt.py -t -d test_dir/`
+<img width="971" height="338" alt="mac_time" src="https://github.com/user-attachments/assets/062290d0-3b7a-4d00-9358-a14148e514dd" />
 
 
 ## Entropy Score,Interpretation,Forensic Action

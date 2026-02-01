@@ -159,9 +159,9 @@ def scan_logic(target, is_dir, output_file=None, calc_entropy=False, check_skew=
             print(line)
 
     print("-" * line_length)
-    summary = f"Summary: Scanned: {files_scanned} | w/ EA: {files_with_ea}"
+    summary = f"Summary: Total Scanned: {files_scanned} | With EA: {files_with_ea}"
     if calc_entropy: summary += f" | High Entropy (>7): {files_with_high_entropy}"
-    if check_skew: summary += f" | Recent Skew Alerts: {skew_alerts}"
+    if check_skew: summary += f" | Time Modification Alerts: {skew_alerts}"
     print(summary)
     print("-" * line_length)
 
